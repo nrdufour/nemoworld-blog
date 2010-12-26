@@ -1,0 +1,74 @@
+
+body {
+  font-family: "Gill Sans","Gill Sans Std","Gill Sans MT",Georgia,serif;
+  padding: 10px;
+  color: black;
+  background: url("http://a3.twimg.com/a/1291318259/images/bg-clouds.png") repeat-x scroll 0 0 #C0DEED
+}
+
+div#main {
+  margin-left: 15%;
+  width: 70%;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  float: left;
+  margin: 10px;
+}
+
+div#title {
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.posts {
+  margin-top: 1em;
+}
+
+.post {
+  margin-top: 1em;
+}
+
+.post_header {
+  border-left: 6px solid black;
+  padding: 3px 5px 3px 5px;
+}
+
+.post_title {
+  font-size: x-large;
+}
+
+.post_body {
+  padding: 10px 10px 10px 10px;
+}
+
+.post_abstract {
+  margin-bottom: 1em;
+}
+
+.post_abstract a {
+  font-weight: bold;
+}
+
+#footer {
+  font-size: 1em;
+  text-align: center;
+}
+
+pre {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
+

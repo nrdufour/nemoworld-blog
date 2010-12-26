@@ -1,0 +1,41 @@
+[
+  {
+    "from": "foaf/:id",
+    "to"  : "../../../social/_design/identity/_show/webid/:id"
+  },
+  {
+    "from"  : "",
+    "to"    : "_list/posts/recent-items",
+    "query" : {
+      "descending" : true
+    }
+  },
+  {
+    "from": "post/:id/media/:resource",
+    "to"  : "../../:id/:resource"
+  },
+  {
+    "from": "post/:id",
+    "to"  : "_show/post/:id"
+  },
+  {
+    "from": "style/*",
+    "to"  : "style/*"
+  },
+  {
+    "from": "vendor/*",
+    "to"  : "vendor/*"
+  },
+  {
+    "from": "js/*",
+    "to"  : "js/*"
+  },
+  {
+    "from": "favicon.ico",
+    "to"  : "favicon.ico"
+  },
+  {
+    "from": "robots.txt",
+    "to"  : "robots.txt"
+  }
+]
