@@ -3,15 +3,12 @@ body {
   font-family: "Gill Sans","Gill Sans Std","Gill Sans MT",Georgia,serif;
   padding: 10px;
   color: black;
-  background-color: white;
+  background-color: mintcream;
 }
 
 div#main {
   margin-left: 15%;
   width: 70%;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background-color: white;
   padding: 5px 5px 5px 5px;
 }
 
