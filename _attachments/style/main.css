@@ -3,7 +3,7 @@ body {
   font-family: "Gill Sans","Gill Sans Std","Gill Sans MT",Georgia,serif;
   padding: 10px;
   color: black;
-  background: url("http://a3.twimg.com/a/1291318259/images/bg-clouds.png") repeat-x scroll 0 0 #C0DEED
+  background-color: white;
 }
 
 div#main {
