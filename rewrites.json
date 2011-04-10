@@ -7,7 +7,7 @@
     "from"  : "",
     "to"    : "_list/posts/recent-items",
     "query" : {
-      "descending" : true
+      "descending" : "true"
     }
   },
   {
