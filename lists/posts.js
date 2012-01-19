@@ -1,8 +1,8 @@
 function(head, req) {
 	var ddoc = this;
 
-	var Mustache = require("vendor/couchapp/lib/mustache"),
-		path = require("vendor/couchapp/lib/path").init(req);
+	var Mustache = require("lib/mustache"),
+		path = require("lib/path").init(req);
 
 	var assetPath = path.asset();
 	var templates = ddoc.templates;
