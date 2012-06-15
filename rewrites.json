@@ -1,11 +1,15 @@
 [
   {
-    "from": "foaf/:id",
-    "to"  : "../../../social/_design/identity/_show/webid/:id"
+    "from"  : "",
+    "to"    : "_list/posts/latest_posts",
+    "query" : {
+      "descending" : "true",
+      "limit" : "5"
+    }
   },
   {
-    "from"  : "",
-    "to"    : "_list/posts/recent-items",
+    "from"  : "all.html",
+    "to"    : "_list/posts/latest_posts",
     "query" : {
       "descending" : "true"
     }
@@ -19,12 +23,8 @@
     "to"  : "_show/post/:id"
   },
   {
-    "from": "style/*",
-    "to"  : "style/*"
-  },
-  {
-    "from": "vendor/*",
-    "to"  : "vendor/*"
+    "from": "css/*",
+    "to"  : "css/*"
   },
   {
     "from": "js/*",

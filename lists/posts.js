@@ -4,25 +4,32 @@ function(head, req) {
 	var Mustache = require("lib/mustache"),
 		path = require("lib/path").init(req);
 
+    var limit = req.query.limit;
+    var isMain = limit != undefined;
+
 	var assetPath = path.asset();
 	var templates = ddoc.templates;
 
-	function sendRow(row) {
-		var doc = row.value;
-
-		send(Mustache.to_html(templates.post_abstract, {
-			title: doc.title,
-			id: doc._id,
-			created_at: doc.created_at
-		}));
-	}
-
-	function sendPosts() {
-		send(Mustache.to_html(templates.posts_begin, {}));
+	function sendPosts(isMain) {
+        var posts = [];
 		while(row = getRow()) {
-			sendRow(row);
+            var doc = row.value;
+            var date = new Date(doc["created_at"]);
+            var year = date.getFullYear();
+            var month = date.getMonth();
+            var day = date.getDate();
+            doc["created_at_year"] = year;
+            doc["created_at_month"] = (month < 10 ? "0" + month : month);
+            doc["created_at_day"] = (day < 10 ? "0" + day : day);
+			posts.push(doc);
 		}
-		send(Mustache.to_html(templates.posts_end, {}));
+		send(Mustache.to_html(
+            templates.posts, 
+            {
+                isMain: isMain,
+                posts: posts
+            }
+        ));
 	}
 
 	provides("html", function() {
@@ -31,7 +38,7 @@ function(head, req) {
 			title: "Last posts"
 		}));
 
-		sendPosts();
+		sendPosts(isMain);
 
 		return Mustache.to_html(templates.footer, {});
 	});

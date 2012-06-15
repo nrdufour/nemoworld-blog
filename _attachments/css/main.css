@@ -1,0 +1,33 @@
+/*
+ * main.css
+ */
+
+body {
+    font-family: monospace;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#main {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#main td {
+    padding: 5px;
+}
+
+footer {
+    text-align: right;
+}
+
+.post_header {
+    border-left: solid 5px black;
+    padding-left: 5px;
+}
+
+.post_title {
+    font-size: large;
+    font-weight: bold;
+}

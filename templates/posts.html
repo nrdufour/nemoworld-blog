@@ -1,0 +1,33 @@
+    <div id="main">
+    
+        <table>
+            <tr>
+                <td>
+                    <h2>{{#isMain}}<a href="/all.html">{{/isMain}}Posts{{#isMain}}</a>{{/isMain}}</h2>
+                    <ul>
+                        {{#posts}}<li>[{{created_at_year}}/{{created_at_month}}/{{created_at_day}}] <a href="/post/{{_id}}">{{title}}</a></li>{{/posts}}
+                    </ul>
+                </td>
+            </tr>
+            {{#isMain}}<tr>
+                <td>
+                    <h2>Current projects</h2>
+                    <p>Main code repository: <a href="https://github.com/nrdufour/">https://github.com/nrdufour/</a></p>
+                    <ul>
+                        <li><a href="http://refuge.io">Refuge</a> <br/> -- The Refuge Project aims to provide a fully decentralized and opensource data platform.</li>
+                        <li><a href="https://github.com/nrdufour/embryo-systems">Embryo Systems</a> <br/> -- ADT Persistence engine and simulation engine</li>
+                        <li><a href="https://github.com/nrdufour/babbler">Babbler</a> <br/> -- Babbler is an old project to create brand new word based on topics and syntax.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Contact me</h2>
+                    <ul>
+                        <li>Twitter: <a href="https://twitter.com/#!/nrdufour">@nrdufour</a></li>
+                        <li>Email: nrdufour _-AT-_ gmail _-DOT-_ com</li>
+                    </ul>
+                </td>
+            </tr>{{/isMain}}
+        </table>
+    </div>
