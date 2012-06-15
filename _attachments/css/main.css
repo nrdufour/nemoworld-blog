@@ -31,3 +31,12 @@ footer {
     font-size: large;
     font-weight: bold;
 }
+
+pre {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
