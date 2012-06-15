@@ -2,20 +2,35 @@
  * main.css
  */
 
+a {
+    text-decoration: none;
+}
+
 body {
-    font-family: monospace;
     padding-left: 100px;
     padding-right: 100px;
+    font-family: monospace;
 }
 
-#main {
-    margin-left: 10px;
-    margin-right: 10px;
+header {
+    text-align: center;
+}
+
+h2 .selector {
+    font-size: x-small;
+}
+
+.page {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.page section {
     padding: 5px;
 }
 
-#main td {
-    padding: 5px;
+.page section h2 {
+    font-family: 'TheSerifOffice',georgia,serif;
 }
 
 footer {
@@ -32,11 +47,24 @@ footer {
     font-weight: bold;
 }
 
+.post {
+    font-family: 'TheSerifOffice',georgia,serif;
+}
+
 pre {
+    font-family: monospace;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
     padding: 10px;
+}
+
+code {
+    font-family: monospace;
+}
+
+footer {
+    font-family: monospace;
 }
